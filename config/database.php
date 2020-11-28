@@ -16,6 +16,10 @@ return [
     */
 
     'default' => env('DB_CONNECTION', 'pgsql'),
+<<<<<<< HEAD
+=======
+
+>>>>>>> 93d782d610aef6f60ccf033c773a2a9e864f53b1
     /*
     |--------------------------------------------------------------------------
     | Database Connections
