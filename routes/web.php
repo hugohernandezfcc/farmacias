@@ -21,3 +21,8 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 	return redirect()->away('http://farmaciacaltengo.herokuapp.com/usuarios');
     // return view('dashboard');
 })->name('dashboard');
+
+Route::middleware(['auth:sanctum', 'verified'])->get('/Inventario', function () {
+	return redirect()->away('http://farmaciacaltengo.herokuapp.com/Inventario');
+    // return view('dashboard');
+})->name('Inventario');
