@@ -13,7 +13,7 @@ class CreateTicketTable extends Migration
      */
     public function up()
     {
-        Schema::create('ticket', function (Blueprint $table) {
+        Schema::create('tickets', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('user_id');
             $table->string('folio', 20);
@@ -25,14 +25,14 @@ class CreateTicketTable extends Migration
         });
 
         // orders & tickes 
-        Schema::create('order_ticket', function (Blueprint $table) {
+        Schema::create('orders_tickets', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('order_id');
             $table->unsignedBigInteger('ticket_id');
             
 
             $table->foreign('order_id')->references('id')->on('orders')->onDelete('cascade');
-            $table->foreign('ticket_id')->references('id')->on('ticket')->onDelete('cascade');
+            $table->foreign('ticket_id')->references('id')->on('tickets')->onDelete('cascade');
 
             $table->timestamps();
         });
@@ -45,6 +45,6 @@ class CreateTicketTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('ticket');
+        Schema::dropIfExists('tickets');
     }
 }

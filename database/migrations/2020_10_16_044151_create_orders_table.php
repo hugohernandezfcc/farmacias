@@ -24,8 +24,8 @@ class CreateOrdersTable extends Migration
 
 
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
-            $table->foreign('agent_sales_id')->references('id')->on('agent_sales')->onDelete('cascade');
-             $table->foreign('inventory_id')->references('id')->on('inventory')->onDelete('cascade');
+            $table->foreign('agent_sales_id')->references('id')->on('agents_sales')->onDelete('cascade');
+             $table->foreign('inventory_id')->references('id')->on('inventories')->onDelete('cascade');
 
             $table->timestamps();
         });

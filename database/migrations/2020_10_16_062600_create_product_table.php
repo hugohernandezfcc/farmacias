@@ -13,7 +13,7 @@ class CreateProductTable extends Migration
      */
     public function up()
     {
-        Schema::create('product', function (Blueprint $table) {
+        Schema::create('products', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('user_id');
             $table->string('name', 100);
@@ -25,7 +25,7 @@ class CreateProductTable extends Migration
             $table->decimal('purchase_price', 16, 2); 
             $table->decimal('sales_price', 16, 2); 
             $table->string('barcode');
-            $table->longText('net_content');
+            $table->longText('net_content'); 
 
 
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
@@ -41,6 +41,6 @@ class CreateProductTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('product');
+        Schema::dropIfExists('products');
     }
 }

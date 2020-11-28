@@ -13,7 +13,7 @@ class CreateClientTable extends Migration
      */
     public function up()
     {
-        Schema::create('client', function (Blueprint $table) {
+        Schema::create('clients', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('user_id');
             $table->string('name', 60);
@@ -35,15 +35,15 @@ class CreateClientTable extends Migration
         });
 
         // orders & tickes 
-        Schema::create('ticket_client', function (Blueprint $table) {
+        Schema::create('tickets_clients', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('ticket_id');
             $table->unsignedBigInteger('client_id');
             
 
-            $table->foreign('ticket_id')->references('id')->on('ticket')->onDelete('cascade');
-            $table->foreign('client_id')->references('id')->on('client')->onDelete('cascade');
-
+            $table->foreign('ticket_id')->references('id')->on('tickets')->onDelete('cascade');
+            $table->foreign('client_id')->references('id')->on('clients')->onDelete('cascade');
+            
             $table->timestamps();
         });
     }
@@ -55,6 +55,6 @@ class CreateClientTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('client');
+        Schema::dropIfExists('clients');
     }
 }

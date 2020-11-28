@@ -25,7 +25,17 @@ class User extends Authenticatable
      */
     protected $fillable = [
         'name',
+        'last_name',
         'email',
+        'job',
+        'role',
+        'born_date',
+        'phone',
+        'state',
+        'street',
+        'municipality',
+        'exterior_number',
+        'postal_code',
         'password',
     ];
 
@@ -58,4 +68,40 @@ class User extends Authenticatable
     protected $appends = [
         'profile_photo_url',
     ];
+
+    public function agentsSales() {
+        return $this->hasMany('App\Models\AgentSales');
+    }  
+
+    public function orders() {
+        return $this->hasMany('App\Models\Order');
+    }
+
+    public function tickets() {
+        return $this->hasMany('App\Models\Ticket');
+    }
+
+    public function clients() {
+        return $this->hasMany('App\Models\Client');
+    }
+
+    public function inventories() {
+        return $this->hasMany('App\Models\Inventory');
+    }
+
+    public function products() {
+        return $this->hasMany('App\Models\Product');
+    }
+
+    public function categories() {
+        return $this->hasMany('App\Models\Category');
+    }
+
+    public function providers() {
+        return $this->hasMany('App\Models\Provider');
+    }
+
+    public function catalogsGivenBy() {
+        return $this->hasMany('App\Models\CatalogGivenBy');
+    }
 }

@@ -13,7 +13,7 @@ class CreateCatalogGivenByTable extends Migration
      */
     public function up()
     {
-        Schema::create('catalog_given_by', function (Blueprint $table) {
+        Schema::create('catalogs_given_by', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('user_id');
             $table->unsignedBigInteger('product_id');
@@ -21,7 +21,7 @@ class CreateCatalogGivenByTable extends Migration
             $table->longText('description');
 
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
-            $table->foreign('product_id')->references('id')->on('product')->onDelete('cascade');
+            $table->foreign('product_id')->references('id')->on('products')->onDelete('cascade');
 
             $table->timestamps();
         });
@@ -34,6 +34,6 @@ class CreateCatalogGivenByTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('catalog_given_by');
+        Schema::dropIfExists('catalogs_given_by');
     }
 }
