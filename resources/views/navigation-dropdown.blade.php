@@ -15,6 +15,9 @@
                     <x-jet-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')">
                         {{ __('Dashboard') }}
                     </x-jet-nav-link>
+                    <x-jet-nav-link href="{{ route('Inventario') }}" :active="request()->routeIs('Inventario')">
+                        {{ __('Inventario') }}
+                    </x-jet-nav-link>
                 </div>
             </div>
 
@@ -49,10 +52,6 @@
                             {{ __('Profile') }}
                         </x-jet-dropdown-link>
                         
-                        <x-jet-dropdown-link href="{{ route('profile.show') }}">
-                            {{ __('Profile') }}
-                        </x-jet-dropdown-link>
-
                         @if (Laravel\Jetstream\Jetstream::hasApiFeatures())
                             <x-jet-dropdown-link href="{{ route('api-tokens.index') }}">
                                 {{ __('API Tokens') }}
@@ -96,9 +95,7 @@
                         <form method="POST" action="{{ route('logout') }}">
                             @csrf
 
-                            <x-jet-dropdown-link href="{{ route('logout') }}"
-                                                onclick="event.preventDefault();
-                                                            this.closest('form').submit();">
+                            <x-jet-dropdown-link href="{{ route('logout') }}"  onclick="event.preventDefault(); this.closest('form').submit();">
                                 {{ __('Logout') }}
                             </x-jet-dropdown-link>
                         </form>

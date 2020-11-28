@@ -19,9 +19,9 @@
         <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.7.0/dist/alpine.js" defer></script>
     </head>
     <body class="font-sans antialiased">
+        
 
-
-        {{-- <div class="min-h-screen bg-gray-100">
+        <div class="min-h-screen bg-gray-100">
             @livewire('navigation-dropdown')
 
             <!-- Page Heading -->
@@ -35,7 +35,7 @@
             <main>
                 {{ $slot }}
             </main>
-        </div> --}}
+        </div>
 
         @stack('modals')
 
