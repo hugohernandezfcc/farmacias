@@ -18,6 +18,5 @@ Route::get('/', function () {
 });
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
-	return redirect()->away('http://farmaciacaltengo.herokuapp.com/usuarios');
-    // return view('dashboard');
+    return view('dashboard');
 })->name('dashboard');
