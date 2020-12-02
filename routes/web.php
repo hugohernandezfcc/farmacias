@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\UsersController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,9 +13,10 @@ use Illuminate\Support\Facades\Route;
 |
 
 */
-use App\Http\Controllers\UsersController;
 
 
+
+Route::get('users', [UsersController::class, 'index']);
 Route::get('/', function () {
     return view('welcome');
 });
@@ -24,5 +25,3 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
 
-
-Route::get('members', [UsersController::class, 'index']);
