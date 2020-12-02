@@ -22,6 +22,7 @@
                                 <table id="myTable" class="display">
                                     <thead>
                                         <tr>
+                                            <th>Identificador</th>
                                             <th>Nombre</th>
                                             <th>Correo Electrónico</th>
                                         </tr>
@@ -29,6 +30,7 @@
                                     <tbody>
                                         @foreach($users as $user)
                                          <tr>
+                                             <td>{{$user->id}}</td>
                                              <td>{{$user->name}}</td>
                                              <td>{{$user->email}}</td>
                                         </tr>
