@@ -1,4 +1,5 @@
 <x-app-layout>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.21/css/dataTables.bootstrap.min.css">
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
             {{ __('Dashboard') }}
@@ -20,11 +21,24 @@
                                     <tr>
                                         <td>asd</td>
                                     </tr>
-                                     @foreach($users as $user)
-                                     <tr>
-                                         <td>{{$user->email}}</td>
-                                    </tr>
-                                    @endforeach 
+                                     
+                                </table>
+
+                                <table id="myTable" class="display">
+                                    <thead>
+                                        <tr>
+                                            <th>Nombre</th>
+                                            <th>Correo Electrónico</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        @foreach($users as $user)
+                                         <tr>
+                                             <td>{{$user->name}}</td>
+                                             <td>{{$user->email}}</td>
+                                        </tr>
+                                        @endforeach 
+                                    </tbody>
                                 </table>
                             </div>
                         </div>
@@ -34,4 +48,11 @@
             </div>
         </div>
     </div>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.21/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready( function () {
+            $('#myTable').DataTable();
+        } );
+    </script>
+
 </x-app-layout>
