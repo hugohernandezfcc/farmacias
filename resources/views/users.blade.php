@@ -11,18 +11,12 @@
             <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
                 <div class="max-w-6xl mx-auto sm:px-6 lg:px-8">
                     <div class="flex justify-center pt-8 sm:justify-start sm:pt-0">
-                        dascjs
+                        Usuarios
                     </div>
 
                     <div class="mt-8 bg-white dark:bg-gray-800 overflow-hidden shadow sm:rounded-lg">
                         <div class="grid grid-cols-1 md:grid-cols-2">
                             <div class="p-12">
-                                <table>
-                                    <tr>
-                                        <td>asd</td>
-                                    </tr>
-                                     
-                                </table>
 
                                 <table id="myTable" class="display">
                                     <thead>
@@ -43,7 +37,7 @@
                             </div>
                         </div>
                     </div>
-
+                    <br />
                 </div>
             </div>
         </div>
