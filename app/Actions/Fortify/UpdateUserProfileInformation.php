@@ -42,6 +42,8 @@ class UpdateUserProfileInformation implements UpdatesUserProfileInformation
             $user instanceof MustVerifyEmail) {
             $this->updateVerifiedUser($user, $input);
         } else {
+            dd($input);
+
             $user->forceFill([
                 'name'              => $input['name'],
                 'email'             => $input['email'],
