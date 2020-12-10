@@ -1,7 +1,9 @@
 <x-guest-layout>
     <x-jet-authentication-card>
         <x-slot name="logo">
-            <x-jet-authentication-card-logo />
+            <div style="background-color: black; ">
+                <img src="http://farmaciacaltengo.herokuapp.com/img/logow2.png" alt="josh logo" class="admire_logo">
+            </div>
         </x-slot>
 
         <x-jet-validation-errors class="mb-4" />

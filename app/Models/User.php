@@ -69,6 +69,7 @@ class User extends Authenticatable
         'profile_photo_url',
     ];
 
+
     public function agentsSales() {
         return $this->hasMany('App\Models\AgentSales');
     }  
@@ -104,4 +105,5 @@ class User extends Authenticatable
     public function catalogsGivenBy() {
         return $this->hasMany('App\Models\CatalogGivenBy');
     }
+
 }
