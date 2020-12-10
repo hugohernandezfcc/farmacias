@@ -54,9 +54,16 @@
 
         <!-- Name -->
         <div class="col-span-6 sm:col-span-4">
-            <x-jet-label for="name" value="{{ __('Name') }}" />
+            <x-jet-label for="name" value="{{ __('Nombre') }}" />
             <x-jet-input id="name" type="text" class="mt-1 block w-full" wire:model.defer="state.name" autocomplete="name" />
             <x-jet-input-error for="name" class="mt-2" />
+        </div>
+       
+        <!-- last_name -->
+        <div class="col-span-6 sm:col-span-4">
+            <x-jet-label for="last_name" value="{{ __('Apellido') }}" />
+            <x-jet-input id="last_name" type="text" class="mt-1 block w-full" wire:model.defer="state.last_name" />
+            <x-jet-input-error for="last_name" class="mt-2" />
         </div>
 
         <!-- Email -->
@@ -66,30 +73,34 @@
             <x-jet-input-error for="email" class="mt-2" />
         </div>
 
-        <!-- last_name -->
-        <div class="col-span-6 sm:col-span-4">
-            <x-jet-label for="last_name" value="{{ __('last_name') }}" />
-            <x-jet-input id="last_name" type="text" class="mt-1 block w-full" wire:model.defer="state.last_name" />
-            <x-jet-input-error for="last_name" class="mt-2" />
-        </div>
 
         <!-- job -->
         <div class="col-span-6 sm:col-span-4">
-            <x-jet-label for="job" value="{{ __('job') }}" />
+            <x-jet-label for="job" value="{{ __('Empleo') }}" />
             <x-jet-input id="job" type="text" class="mt-1 block w-full" wire:model.defer="state.job" />
             <x-jet-input-error for="job" class="mt-2" />
         </div>
 
         <!-- role -->
         <div class="col-span-6 sm:col-span-4">
-            <x-jet-label for="role" value="{{ __('role') }}" />
-            <x-jet-input id="role" type="text" class="mt-1 block w-full" wire:model.defer="state.role" />
+            <x-jet-label for="role" value="{{ __('Rol') }}" />
+            <!-- <x-jet-input  type="text"  wire:model.defer="state.role" /> -->
+            
+            <select name="role" id="role" class="form-select rounded-md shadow-sm mt-1 block w-full">
+                <option value="Administrador">Administrador</option>
+                <option value="Ventas">Ventas</option>
+                <option value="Almacén">Almacén</option>
+                <option value="Punto de Venta">Punto de Venta</option>
+                <option value="Repartidor">Repartidor</option>
+            </select>
             <x-jet-input-error for="role" class="mt-2" />
         </div>
 
+
+
         <!-- born_date -->
         <div class="col-span-6 sm:col-span-4">
-            <x-jet-label for="born_date" value="{{ __('born_date') }}" />
+            <x-jet-label for="born_date" value="{{ __('Fecha de nacimiento') }}" />
             <x-jet-input id="born_date" type="text" class="mt-1 block w-full" wire:model.defer="state.born_date" />
             <x-jet-input-error for="born_date" class="mt-2" />
         </div>
