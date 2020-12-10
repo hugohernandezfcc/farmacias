@@ -24,7 +24,7 @@ class UpdateUserProfileInformation implements UpdatesUserProfileInformation
             'photo'             => ['nullable', 'image', 'max:1024'],
             'last_name'         => ['required', 'string', 'max:255'],
             'job'               => ['required', 'string', 'max:255'],
-            'role'              => ['required', 'string', 'max:255'],
+            // 'role'              => ['required', 'string', 'max:255'],
             'born_date'         => ['required', 'string', 'max:255'],
             'phone'             => ['required', 'string', 'max:255'],
             'state'             => ['required', 'string', 'max:255'],
