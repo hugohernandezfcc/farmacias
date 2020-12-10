@@ -101,7 +101,7 @@
         <!-- born_date -->
         <div class="col-span-6 sm:col-span-4">
             <x-jet-label for="born_date" value="{{ __('Fecha de nacimiento') }}" />
-            <x-jet-input id="born_date" type="text" class="mt-1 block w-full" wire:model.defer="state.born_date" />
+            <x-jet-input id="born_date" type="date" class="mt-1 block w-full" wire:model.defer="state.born_date" />
             <x-jet-input-error for="born_date" class="mt-2" />
         </div>
 
