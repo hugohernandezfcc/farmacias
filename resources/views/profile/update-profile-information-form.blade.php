@@ -65,6 +65,77 @@
             <x-jet-input id="email" type="email" class="mt-1 block w-full" wire:model.defer="state.email" />
             <x-jet-input-error for="email" class="mt-2" />
         </div>
+
+        <!-- last_name -->
+        <div class="col-span-6 sm:col-span-4">
+            <x-jet-label for="last_name" value="{{ __('last_name') }}" />
+            <x-jet-input id="last_name" type="text" class="mt-1 block w-full" wire:model.defer="state.last_name" />
+            <x-jet-input-error for="last_name" class="mt-2" />
+        </div>
+
+        <!-- job -->
+        <div class="col-span-6 sm:col-span-4">
+            <x-jet-label for="job" value="{{ __('job') }}" />
+            <x-jet-input id="job" type="text" class="mt-1 block w-full" wire:model.defer="state.job" />
+            <x-jet-input-error for="job" class="mt-2" />
+        </div>
+
+        <!-- role -->
+        <div class="col-span-6 sm:col-span-4">
+            <x-jet-label for="role" value="{{ __('role') }}" />
+            <x-jet-input id="role" type="text" class="mt-1 block w-full" wire:model.defer="state.role" />
+            <x-jet-input-error for="role" class="mt-2" />
+        </div>
+
+        <!-- born_date -->
+        <div class="col-span-6 sm:col-span-4">
+            <x-jet-label for="born_date" value="{{ __('born_date') }}" />
+            <x-jet-input id="born_date" type="text" class="mt-1 block w-full" wire:model.defer="state.born_date" />
+            <x-jet-input-error for="born_date" class="mt-2" />
+        </div>
+
+        <!-- phone -->
+        <div class="col-span-6 sm:col-span-4">
+            <x-jet-label for="phone" value="{{ __('phone') }}" />
+            <x-jet-input id="phone" type="phone" class="mt-1 block w-full" wire:model.defer="state.phone" />
+            <x-jet-input-error for="phone" class="mt-2" />
+        </div>
+
+        <!-- state -->
+        <div class="col-span-6 sm:col-span-4">
+            <x-jet-label for="state" value="{{ __('state') }}" />
+            <x-jet-input id="state" type="text" class="mt-1 block w-full" wire:model.defer="state.state" />
+            <x-jet-input-error for="state" class="mt-2" />
+        </div>
+
+        <!-- street -->
+        <div class="col-span-6 sm:col-span-4">
+            <x-jet-label for="street" value="{{ __('street') }}" />
+            <x-jet-input id="street" type="text" class="mt-1 block w-full" wire:model.defer="state.street" />
+            <x-jet-input-error for="street" class="mt-2" />
+        </div>
+
+        <!-- municipality -->
+        <div class="col-span-6 sm:col-span-4">
+            <x-jet-label for="municipality" value="{{ __('municipality') }}" />
+            <x-jet-input id="municipality" type="text" class="mt-1 block w-full" wire:model.defer="state.municipality" />
+            <x-jet-input-error for="municipality" class="mt-2" />
+        </div>
+
+        <!-- exterior_number -->
+        <div class="col-span-6 sm:col-span-4">
+            <x-jet-label for="exterior_number" value="{{ __('exterior_number') }}" />
+            <x-jet-input id="exterior_number" type="text" class="mt-1 block w-full" wire:model.defer="state.exterior_number" />
+            <x-jet-input-error for="exterior_number" class="mt-2" />
+        </div>
+
+        <!-- postal_code -->
+        <div class="col-span-6 sm:col-span-4">
+            <x-jet-label for="postal_code" value="{{ __('postal_code') }}" />
+            <x-jet-input id="postal_code" type="text" class="mt-1 block w-full" wire:model.defer="state.postal_code" />
+            <x-jet-input-error for="postal_code" class="mt-2" />
+        </div>
+        
     </x-slot>
 
     <x-slot name="actions">
