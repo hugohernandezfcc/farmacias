@@ -66,8 +66,6 @@
                     </div>
                 </div>
 
-
-                <x-jet-welcome />
             </div>
         </div>
     </div>
