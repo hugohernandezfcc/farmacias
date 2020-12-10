@@ -43,18 +43,18 @@ class UpdateUserProfileInformation implements UpdatesUserProfileInformation
             $this->updateVerifiedUser($user, $input);
         } else {
             $user->forceFill([
-                'name' => $input['name'],
-                'email' => $input['email'],
-                'last_name' => $input['last_name'],
-                'job'   => $input['job'],
-                'role'  => $input['role'],
-                'born_date' => $input['born_date'],
-                'phone' => $input['phone'],
-                'state' => $input['state'],
-                'street'    => $input['street'],
-                'municipality'  => $input['municipality'],
+                'name'              => $input['name'],
+                'email'             => $input['email'],
+                'last_name'         => $input['last_name'],
+                'job'               => $input['job'],
+                'role'              => $input['role'],
+                'born_date'         => $input['born_date'],
+                'phone'             => $input['phone'],
+                'state'             => $input['state'],
+                'street'            => $input['street'],
+                'municipality'      => $input['municipality'],
                 'exterior_number'   => $input['exterior_number'],
-                'postal_code'   => $input['postal_code']
+                'postal_code'       => $input['postal_code']
             ])->save();
         }
     }
