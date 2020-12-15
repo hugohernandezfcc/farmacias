@@ -271,7 +271,7 @@
   <a class="textTarjetasCredito">Tarjetas de crédito y débito</a>
   <img class="iconVisa" src="Images/Visa.svg">
   <img class="iconMaster" src="Images/Master.svg">
-  <img class="iconblue" src="Images/iconBlue.svg">
+  <img class="iconblue" src="Images/iconBlue.svg"> 
   <img class="iconRed" src="Images/IconRed.svg">
 
   <a class="TextPagoElectronico">Pago electrónico</a>
