@@ -4,9 +4,9 @@
             <meta charset="UTF-8">
           <meta name="viewport" content="width=device-width, initial-scale=1.0">
           <title>Aeromexico</title>
-          <link rel="Stylesheet" href="style.css" />
-          <link rel="Stylesheet" href="modal.css" />
-          <link rel="Stylesheet" href="modallenguaje.css" />
+          <link rel="Stylesheet" href="{{ asset('css/style.css') }}" />
+          <link rel="Stylesheet" href="{{ asset('css/modal.css') }}" />
+          <link rel="Stylesheet" href="{{ asset('css/modallenguaje.css') }}" />
           <script>
             function porencima(x) {
               x.style.color = "rgb(233, 27, 47)";
