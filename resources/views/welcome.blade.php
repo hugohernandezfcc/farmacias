@@ -265,24 +265,25 @@
 
   <a class="copyright">© 2019 Aeroméxico. Todos los derechos reservados l Legal l Aviso de privacidad l Sitio
     accesible</a>
-  <img src="Images/PCI1.svg" class="PCI">
+  <img src="{{ asset('Images/PCI1.svg') }}" class="PCI">
   <a class="textCertificadopor">Certificados por</a>
   <a class="Textaceptamos">Aceptamos</a>
   <a class="textTarjetasCredito">Tarjetas de crédito y débito</a>
-  <img class="iconVisa" src="Images/Visa.svg">
-  <img class="iconMaster" src="Images/Master.svg">
-  <img class="iconblue" src="Images/iconBlue.svg"> 
-  <img class="iconRed" src="Images/IconRed.svg">
+
+  <img class="iconVisa"   src="{{ asset('Images/Visa.svg') }}">
+  <img class="iconMaster" src="{{ asset('Images/Master.svg') }}">
+  <img class="iconblue"   src="{{ asset('Images/iconBlue.svg') }}"> 
+  <img class="iconRed"    src="{{ asset('Images/IconRed.svg') }}">
 
   <a class="TextPagoElectronico">Pago electrónico</a>
-  <img class="iconVisa2" src="Images/VisaIcon.svg">
-  <img class="iconPaypal" src="Images/paypal.svg">
-  <img class="iconMaster2" src="Images/Masterpass_logo_2016.svg">
+  <img class="iconVisa2" src="{{ asset('Images/VisaIcon.svg') }}">
+  <img class="iconPaypal" src="{{ asset('Images/paypal.svg') }}">
+  <img class="iconMaster2" src="{{ asset('Images/Masterpass_logo_2016.svg') }}">
 
   <a class="textOtros">Otros</a>
-  <img class="iconUATP" src="Images/UATP.svg">
-  <img class="iconBilletes" src="Images/Group67.svg">
-  <img class="iconAvion" src="Images/Group601.svg">
+  <img class="iconUATP" src="{{ asset('Images/UATP.svg') }}">
+  <img class="iconBilletes" src="{{ asset('Images/Group67.svg') }}">
+  <img class="iconAvion" src="{{ asset('Images/Group601.svg') }}">
   <a class=""></a>
   <a class=""></a>
 
