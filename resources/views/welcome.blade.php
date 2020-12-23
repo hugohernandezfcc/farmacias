@@ -4,7 +4,29 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Aeromexico</title>
-      
+      <link href="{{ asset('style.css') }}" rel="stylesheet" type="text/css"/>
+      <link href="{{ asset('modal.css') }}" rel="stylesheet" type="text/css"/>
+      <link href="{{ asset('modallenguaje.css') }}" rel="stylesheet" type="text/css"/>
+      <script>
+        function porencima(x) {
+          x.style.color = "rgb(233, 27, 47)";
+        }
+
+        function alquitar(x) {
+          x.style.color = "rgb(0, 124, 194)";
+        }
+
+        function porencima2(x) {
+          x.style.background = "rgb(233, 27, 47)";
+        }
+
+        function alquitar2(x) {
+          x.style.background = "rgb(0, 124, 194)";
+        }
+        function alquitar3(x) {
+          x.style.background = "rgb(0, 73, 144)";
+        }
+      </script>
 
     </head>
     <body class="antialiased">
@@ -268,27 +290,5 @@
 
 
 </footer>
-<link href="{{ asset('style.css') }}" rel="stylesheet" type="text/css"/>
-<link href="{{ asset('modal.css') }}" rel="stylesheet" type="text/css"/>
-<link href="{{ asset('modallenguaje.css') }}" rel="stylesheet" type="text/css"/>
-<script>
-  function porencima(x) {
-    x.style.color = "rgb(233, 27, 47)";
-  }
 
-  function alquitar(x) {
-    x.style.color = "rgb(0, 124, 194)";
-  }
-
-  function porencima2(x) {
-    x.style.background = "rgb(233, 27, 47)";
-  }
-
-  function alquitar2(x) {
-    x.style.background = "rgb(0, 124, 194)";
-  }
-  function alquitar3(x) {
-    x.style.background = "rgb(0, 73, 144)";
-  }
-</script>
 </html>
