@@ -4,9 +4,10 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Aeromexico</title>
-      <link href="{{ mix('/css/app.css') }}" rel="stylesheet" type="text/css" />
-      <!-- <link href="{{ asset('css/modal.css') }}" rel="stylesheet" type="text/css" />
+      <<!-- link href="{{ asset('css/style.css') }}" rel="stylesheet" type="text/css" />
+      <link href="{{ asset('css/modal.css') }}" rel="stylesheet" type="text/css" />
       <link href="{{ asset('css/modallenguaje.css') }}" rel="stylesheet" type="text/css" /> -->
+      <link href="/css/app.css" rel="stylesheet">
       <script>
         function porencima(x) {
           x.style.color = "rgb(233, 27, 47)";
