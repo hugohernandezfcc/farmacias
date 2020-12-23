@@ -1,32 +1,231 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
-            <meta charset="UTF-8">
-          <meta name="viewport" content="width=device-width, initial-scale=1.0">
-          <title>Aeromexico</title>
-          <link rel="Stylesheet" href="{{ asset('style.css') }}" />
-          <link rel="Stylesheet" href="{{ asset('modal.css') }}" />
-          <link rel="Stylesheet" href="{{ asset('modallenguaje.css') }}" />
-          <script>
-            function porencima(x) {
-              x.style.color = "rgb(233, 27, 47)";
-            }
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Aeromexico</title>
+      <link rel="Stylesheet" href="{{ asset('style.css') }}" />
+      <link rel="Stylesheet" href="{{ asset('modal.css') }}" />
+      <link rel="Stylesheet" href="{{ asset('modallenguaje.css') }}" />
+      <script>
+        function porencima(x) {
+          x.style.color = "rgb(233, 27, 47)";
+        }
 
-            function alquitar(x) {
-              x.style.color = "rgb(0, 124, 194)";
-            }
+        function alquitar(x) {
+          x.style.color = "rgb(0, 124, 194)";
+        }
 
-            function porencima2(x) {
-              x.style.background = "rgb(233, 27, 47)";
-            }
+        function porencima2(x) {
+          x.style.background = "rgb(233, 27, 47)";
+        }
 
-            function alquitar2(x) {
-              x.style.background = "rgb(0, 124, 194)";
-            }
-            function alquitar3(x) {
-              x.style.background = "rgb(0, 73, 144)";
-            }
-          </script>
+        function alquitar2(x) {
+          x.style.background = "rgb(0, 124, 194)";
+        }
+        function alquitar3(x) {
+          x.style.background = "rgb(0, 73, 144)";
+        }
+      </script>
+
+      <style type="text/css">
+        @font-face {
+    font-family: Neue Haas Unica Pro;
+    src: url(Fuentes/NeueHaasUnicaPro.ttf);
+  }
+
+  .modalDialog2 {
+    position: absolute;
+    font-family: Neue Haas Unica Pro;
+    font-style: normal;
+    font-weight: normal;
+  
+    z-index: 1;
+    opacity: 0;
+    pointer-events: none;
+  }
+  .modalDialog2:target {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .modalDialog2 > div {
+    position: absolute;
+    width: 224px;
+    height: 195px;
+    left: 972px;
+    top: 48px;
+    
+    border-radius: 3px;
+  
+    background: #ffffff;
+    /* Top Shadow Banner */
+  }
+  .close2 {
+    background: #606061;
+    color: #ffffff;
+    line-height: 25px;
+    position: absolute;
+    right: -12px;
+    text-align: center;
+    top: -10px;
+    width: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    -moz-box-shadow: 1px 1px 3px #000;
+    -webkit-box-shadow: 1px 1px 3px #000;
+    box-shadow: 1px 1px 3px #000;
+  }
+  .close2:hover {
+    background: #00d9ff;
+  }
+
+.textleng1{
+/* Language */
+font-family: Neue Haas Unica Pro;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 48px;
+
+/* Auto Layout */
+
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+
+position: absolute;
+left: 83.4%;
+right: 11.37%;
+top: 11.29%;
+bottom: 11.29%;
+
+/* identical to box height, or 400% */
+
+display: flex;
+align-items: center;
+text-align: right;
+letter-spacing: 0.24px;
+
+/* AM White */
+
+color: #FFFFFF;
+
+/* Inside Auto Layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+margin: 8px 0px;
+}
+
+.texidioma{
+    /* IDIOMA */
+
+
+position: absolute;
+width: 57px;
+height: 30px;
+left: 15px;
+top: 18.7px;
+
+font-family: Neue Haas Unica Pro;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 30px;
+/* identical to box height, or 214% */
+
+display: flex;
+align-items: center;
+letter-spacing: 1px;
+text-transform: uppercase;
+
+/* AM Med Gray */
+
+color: #999999;
+}
+
+.espModal{
+/* México Español */
+
+
+position: absolute;
+width: 120px;
+height: 45px;
+left: 60px;
+top: 66px;
+
+font-family: Neue Haas Unica Pro;
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 20px;
+/* or 143% */
+
+display: flex;
+align-items: center;
+
+color: #0B2343;
+
+}
+
+.flagMex{
+position: absolute;
+width: 30px;
+height: 30px;
+left: 16px;
+top: 75px;
+
+border-radius: 3px;
+}
+
+.flagUsa{
+position: absolute;
+width: 30px;
+height: 30px;
+left: 16px;
+top: 142px;
+
+border-radius: 3px;
+}
+
+.iconCheck{
+position: absolute;
+width: 20px;
+height: 20px;
+left: 188px;
+top: 79px;
+}
+
+
+.engModal{
+  /* United States English */
+
+
+position: absolute;
+width: 90px;
+height: 40px;
+left: 60px;
+top: 136px;
+
+font-family: Neue Haas Unica Pro;
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 20px;
+/* or 143% */
+
+display: flex;
+align-items: center;
+
+color: #0B2343;  
+}
+      </style>
+
     </head>
     <body class="antialiased">
         <div id="openModal" class="modalDialog">
