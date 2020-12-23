@@ -4,9 +4,9 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Aeromexico</title>
-      <link href="{{ asset('style.css') }}" rel="stylesheet" type="text/css"/>
-      <link href="{{ asset('modal.css') }}" rel="stylesheet" type="text/css"/>
-      <link href="{{ asset('modallenguaje.css') }}" rel="stylesheet" type="text/css"/>
+      <link href="{{ asset('style.css') }}" rel="stylesheet" type="text/css" />
+      <link href="{{ asset('modal.css') }}" rel="stylesheet" type="text/css" />
+      <link href="{{ asset('modallenguaje.css') }}" rel="stylesheet" type="text/css" />
       <script>
         function porencima(x) {
           x.style.color = "rgb(233, 27, 47)";
@@ -31,19 +31,19 @@
     </head>
     <body class="antialiased">
         <div id="openModal" class="modalDialog">
-    <div>
-      <a href="#close" title="Close" class="close">X</a>
-    </div>
-    <a class="ultimasnoticiasmodal">Últimas noticias</a>
-    <a class="textCovModal">COVID-19 Recomendaciones</a>
-    <img class="imgModal1" src="Images/Picture-27 1.png">
-    <img class="imgModal2" src="Images/Picture-27 2.png">
-    <a class="text1Mod">Las restricciones de entrada para viajes no esenciales a los Estados Unidos. Leer más</a>
-    <a class="textBigModal">Nueva ruta de temporada BCN</a>
-    <a class="text2Mod">Las restricciones de entrada para viajes no esenciales a los Estados Unidos. Leer más</a>
-    <svg class="recmodal"></svg>
-    <a class="textm" href="" onmouseover="porencima(this)" onmouseout="alquitar(this)">Ver las noticias anteriores</a>
-  </div>
+          <div>
+            <a href="#close" title="Close" class="close">X</a>
+          </div>
+          <a class="ultimasnoticiasmodal">Últimas noticias</a>
+          <a class="textCovModal">COVID-19 Recomendaciones</a>
+          <img class="imgModal1" src="Images/Picture-27 1.png">
+          <img class="imgModal2" src="Images/Picture-27 2.png">
+          <a class="text1Mod">Las restricciones de entrada para viajes no esenciales a los Estados Unidos. Leer más</a>
+          <a class="textBigModal">Nueva ruta de temporada BCN</a>
+          <a class="text2Mod">Las restricciones de entrada para viajes no esenciales a los Estados Unidos. Leer más</a>
+          <svg class="recmodal"></svg>
+          <a class="textm" href="" onmouseover="porencima(this)" onmouseout="alquitar(this)">Ver las noticias anteriores</a>
+        </div>
 
 
 
